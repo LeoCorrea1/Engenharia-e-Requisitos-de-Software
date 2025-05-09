@@ -1,0 +1,76 @@
+ Classe: Aluno
+
+Responsabilidades:
+Visualizar notas por semestre letivo.    
+Inscrever-se em disciplinas.    
+Visualizar grade curricular.    
+Solicitar histórico escolar.    
+Colaborações:
+Colabora com a classe Disciplina para se inscrever.    
+Colabora com a classe SemestreLetivo para visualizar notas.    
+Colabora com a classe HistoricoEscolar para solicitar o histórico.    
+2. Classe: Professor
+
+Responsabilidades:
+Lançar notas das disciplinas.    
+Fornecer grade de disponibilidade.    
+Fornecer habilitações (disciplinas que pode lecionar).    
+Atualizar informações pessoais.    
+Obter diário de classe.    
+Colaborações:
+Colabora com a classe Disciplina para lançar notas.    
+Colabora com a classe SemestreLetivo para obter o diário de classe.    
+3. Classe: Disciplina
+
+Responsabilidades:
+Manter informações cadastrais (nome, código, carga horária, pré-requisitos, descrição).    
+Colaborações:
+Colabora com a classe Turma para definir turmas.    
+Colabora com a classe Professor para lançamento de notas.    
+Colabora com a classe Aluno para inscrições.    
+4. Classe: Turma
+
+Responsabilidades:
+Permitir a abertura de turmas (definir salas, laboratórios, horários, dias da semana).    
+Permitir o fechamento de turmas.    
+Colaborações:
+Colabora com a classe Disciplina para ser aberta.    
+5. Classe: SemestreLetivo
+
+Responsabilidades:
+Permitir a visualização de notas por aluno.    
+Colaborações:
+Colabora com a classe Aluno para mostrar as notas.    
+Colabora com a classe Professor para fornecer diário de classe.    
+6. Classe: Inscricao
+
+Responsabilidades:
+Registrar inscrições de alunos em disciplinas.    
+Controlar o andamento das inscrições (situação, aprovação, rejeição, ajustes).    
+Cancelar Inscrição    
+Atender Listas de Espera    
+Colaborações:
+Colabora com Aluno para registrar a inscrição do aluno.    
+Colabora com Disciplina para registrar a inscrição na disciplina.    
+7. Classe: GradeCurricular
+
+Responsabilidades:
+Manter informações sobre a grade curricular.    
+Visualizar Grade Curricular    
+Colaborações:
+Colabora com Disciplina para definir as disciplinas da grade.    
+8. Classe: HistoricoEscolar
+
+Responsabilidades:
+Manter informações sobre o histórico escolar do aluno (disciplinas cursadas, notas, status de conclusão).    
+Solicitar Histórico Escolar    
+Colaborações:
+Colabora com Aluno para registrar e fornecer o histórico.    
+9. Classe: Avaliacao
+
+Responsabilidades:
+Lançar Avaliações    
+Visualizar Avaliações    
+Colaborações:
+Colabora com Professor para lançar as avaliações.    
+Colabora com Aluno para visualizar avaliações.    
